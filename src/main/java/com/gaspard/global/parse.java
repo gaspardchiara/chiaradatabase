@@ -138,7 +138,7 @@ add filestruct = (add)data.getFilepayload();
 System.out.println("In wait data"+filestruct.name);
 
 ChiaraConfiguration config = new ChiaraConfiguration();
-if (checkstringifequal( filestruct.password,config.getsha256pass()) && checkstringifequal( filestruct.name,config.getUser()) ) {
+if (checkstringifequal( filestruct.password,config.getsha256pass()) && checkstringifequal( filestruct.user,config.getUser()) ) {
     
  
     sendok(socket);
