@@ -80,7 +80,6 @@ if (checkstringifequal( delfile.password,config.getsha256pass()) && checkstringi
 
 indexoperation operationcluster = new indexoperation();
 fileindexstruct filestruct =     searchfileindexandeleteit(delfile.id);
-System.out.println(filestruct.id+"Il va être delet" + "alors que lui doit être deler" +delfile.id);
 
 if(filestruct.id == null) {
 respond filerespond = new respond();

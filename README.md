@@ -5,7 +5,8 @@ Please configure com/gaspard/you/ChiaraConfiguration  is very important to chang
 
 after that do : 
 ```java
-mvn install clean
+mvn clean compile assembly:single
+
 ```
 And run the jar on TARGET/
 
