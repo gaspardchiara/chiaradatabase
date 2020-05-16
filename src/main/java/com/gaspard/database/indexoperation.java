@@ -188,7 +188,8 @@ return addfilesindisk(filenew);
    templatefiles fichieafterlist = new templatefiles ();
    fichieafterlist.file = filenew.file;
    fichieafterlist.clustername = filenew.name;
-   fichieafterlist.whereinlist = index.size()+1;
+
+   fichieafterlist.whereinlist = index.size();
    index.add(fichieafterlist);
    clusterlist.setIndex(index);
    ObjectOutputStream writedata = new   ObjectOutputStream(new FileOutputStream(config.getDatastorage()+"/"+name+""));

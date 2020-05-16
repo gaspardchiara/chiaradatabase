@@ -379,8 +379,9 @@ System.out.println("data cluster name "+filestruct.dataclustername+"");
    ObjectInputStream object = new   ObjectInputStream(thedata);
    filexlist clusterlist = (filexlist) object.readObject();
    List<templatefiles> index = clusterlist.getIndex();
+   System.out.println("ERROR HERE "+filestruct.indexinfileslist+"");
+   templatefiles fichieafterlist =index.get(filestruct.indexinfileslist); //BIG BUG HERE 
    
-   templatefiles fichieafterlist =index.get(filestruct.indexinfileslist);
 thefile.data = fichieafterlist.file;
 thefile.message = "The file is here !";   
 thefile.status = 0;
